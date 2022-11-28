@@ -28,7 +28,7 @@ Připojovací URL, které se zadává při konfiguraci panelu Database v Intelli
    IntelliJ Idea, najdeš v souboru `src/main/resources/application.yaml`. Nejjednodušší je použít *DataSource from URL*.
 1. Vytvoř entitu `Post` a v ní vytvoř fieldy a properties odpovídající databázové tabulce. Nezpomeň na anotace `@Entity`, `@Id` a `@GeneratedValue`.
 1. Vytvoř `JpaRepository` pro entitu `Post` (pojmenuj ji `PostRepository`).
-1. Vytvoř službu `PostService`, která bude pomoc @Autowired získávat `PostRepository`.
+1. Vytvoř službu `PostService`, která bude pomoc `@Autowired` získávat `PostRepository`.
 1. Ve službě `PostService` vytvoř metodu `list()`, která bude vracet seznam všech postů (zatím bez stránkování a řazení). Dále tam vytvoř metodu
    `singlePost(String slug)`, která najde jeden post podle zadaného `slug` a ten vrátí.
 1. Vytvoř controller a v něm dvě metody, pro zobrazení úvodí stránky se seznamem postů a pro zobrazení jednoho kompletního postu. Controller bude používat službu
