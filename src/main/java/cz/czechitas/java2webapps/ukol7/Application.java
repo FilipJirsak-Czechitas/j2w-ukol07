@@ -1,9 +1,7 @@
-package cz.czechitas.java2webapps.ukol8;
+package cz.czechitas.java2webapps.ukol7;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.data.domain.PageRequest;
-import org.springframework.data.domain.Pageable;
 
 /**
  * Hlavní třída, která spouští celou aplikaci pomocí Spring Boot.
