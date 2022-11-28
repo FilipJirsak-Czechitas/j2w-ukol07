@@ -1,6 +1,6 @@
 # Úkol 7 – Blog
 
-Vytvoříme jednoduchou aplikaci pro zobrazování blogových zápisků. Na titulní stránce se bude zobrazovat přehled dvaceti posledních zápisků, nejnovější bue na
+Vytvoříme jednoduchou aplikaci pro zobrazování blogových zápisků. Na titulní stránce se bude zobrazovat přehled dvaceti posledních zápisků, nejnovější bude na
 prvním místě. Zobrazovat se bude titulek, perex, datum publikování a autor. U zápisku bude odkaz např. „Přečíst“, který povede na stránku s detailem, kde bude
 vedle výše uvedených informací také celý zápisek. URL zápisku bude ve tvaru `/post/{slug}`, kde `slug` je hodnota z odpovídajícího sloupce v databázi. Na
 stránce s detailem bude odkaz zpět na titulní stránku.
