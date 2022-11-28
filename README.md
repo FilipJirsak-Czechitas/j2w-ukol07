@@ -1,4 +1,4 @@
-# Úkol 8 – Blog
+# Úkol 7 – Blog
 
 Vytvoříme jednoduchou aplikaci pro zobrazování blogových zápisků. Na titulní stránce se bude zobrazovat přehled dvaceti posledních zápisků, nejnovější bue na
 prvním místě. Zobrazovat se bude titulek, perex, datum publikování a autor. U zápisku bude odkaz např. „Přečíst“, který povede na stránku s detailem, kde bude
@@ -33,8 +33,9 @@ Připojovací URL, které se zadává při konfiguraci panelu Database v Intelli
    `singlePost(String slug)`, která najde jeden post podle zadaného `slug` a ten vrátí.
 1. Vytvoř controller a v něm dvě metody, pro zobrazení úvodí stránky se seznamem postů a pro zobrazení jednoho kompletního postu. Controller bude používat službu
    `PostService`, kterou získá pomocí `@Autowired`. Nemusíš řešit případ, když si uživatel vymyslí URL postu, který neexistuje.
-1. Vytvoř šablony pro obě metody controlleru. Na vzhledu nezáleží :-) Pro vložení HTML kódu z modelu do šablony je nutné místo `th:text` použít `th:utext`. To
-   zajistí, že Thymeleaf nebude převádět znaky `<` a `>`, ale vloží je bezezměny do výsledného souboru.
+1. Vytvoř šablony pro obě metody controlleru. Na vzhledu nezáleží :-) Pro vložení HTML kódu z modelu do šablony je nutné místo použít ve Freemarkeru zápis
+   `${value?no_esc}`, který zajistí, že Freemarker nebude převádět znaky `<` a `>`, ale vloží je bezezměny do výsledného souboru. Detaily najdeš v dokumentaci
+   [no_esc](https://freemarker.apache.org/docs/ref_builtins_string.html#ref_builtin_no_esc) Freemarkeru.
 1. Uprav metodu `list()` v `PostService` tak, aby používala `Pageable` a omezila výsledek na 20 záznamů. Pro vytvoření správného `Pageable` použij statickou
    metodu `PageRequest.of(0, 20)`. Vytvoř v repository metodu, která bude vracet Page<Post>, bude používat `Pageable` pro omezení počtu záznamů, načte pouze posty,
    které mají datum publikace a není v budoucnosti, a seřadí záznamy sestupně podle data publikace. Pro řazení se nebude používat položka `sort` z `Pageable`, ale
@@ -43,14 +44,14 @@ Připojovací URL, které se zadává při konfiguraci panelu Database v Intelli
    na stránce jen odkazy „předchozí“ a „další“. Použij k tomu metody `hasPrevious()` a `hasNext()` na rozhraní `Page`.
 1. Zkontroluj, zda vše funguje.    
 1. *Commitni* a *pushnni* změny (výsledný kód) do svého repository na GitHubu.
-1. Vlož odkaz na své repository do tabulky s úkoly na Google Drive.
+1. Vlož odkaz na své repository do úkolu na portálu https://moje.czechitas.cz.
 1. *Super bonus*: Můžeš do aplikace přidat i administraci – stránku, přes kterou bude možné přidávat zápisky, upravovat je a mazat.
 
 ## Odkazy
 
-* odkaz na stránku [Lekce 8](https://java.czechitas.cz/2021-jaro/java-2/lekce-8.html)
-* Java SE 11 [Javadoc](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/) – dokumentace všech tříd, které jsou součástí základní Javy ve verzi 11.
+* odkaz na stránku [Lekce 10](https://java.czechitas.cz/2022-podzim/java-2/lekce-10.html)
+* Java SE 17 [Javadoc](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/) – dokumentace všech tříd, které jsou součástí základní Javy ve verzi 17.
 * Dokumentace [Spring Boot](https://spring.io/projects/spring-boot#learn) – odsud je anotace `@SpringBootApplication` a třída `SpringApplication`.
 * Dokumentace [Spring Framework](https://spring.io/projects/spring-framework#learn) – odsud jsou anotace `@Controller`, `@GetRequest` a třída `ModelAndView`.
-* Dokumentace [Thymeleaf](https://www.thymeleaf.org/doc/tutorials/3.0/usingthymeleaf.html) – šablonovací systém pro HTML použitý v projektu.
+* Dokumentace [Freemarker](https://freemarker.apache.org/docs/) – šablonovací systém pro HTML použitý v projektu.
 * [Unsplash](https://unsplash.com) – obrázky a fotografie k použití zdarma
