@@ -2,7 +2,7 @@ spring:
   freemarker:
     cache: false
     settings:
-      auto_import: /_imports/common.ftlh as c
+#      auto_import: /_imports/common.ftlh as c
       output_encoding: UTF-8
   datasource:
     url: jdbc:h2:file:./data/blog;DB_CLOSE_DELAY=-1;AUTO_SERVER=TRUE;COLLATION=CZECH
