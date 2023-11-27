@@ -55,7 +55,7 @@ Připojovací URL, které se zadává při konfiguraci panelu Database v Intelli
 
 ## Odkazy
 
-* odkaz na stránku [Lekce 10](https://java.czechitas.cz/2022-podzim/java-2/lekce-10.html)
+* odkaz na stránku [Lekce 10](https://java.czechitas.cz/2023-podzim/java-2/lekce-10.html)
 * Java SE 17 [Javadoc](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/) – dokumentace všech tříd, které jsou součástí základní Javy ve verzi 17.
 * Dokumentace [Spring Boot](https://spring.io/projects/spring-boot#learn) – odsud je anotace `@SpringBootApplication` a třída `SpringApplication`.
 * Dokumentace [Spring Framework](https://spring.io/projects/spring-framework#learn) – odsud jsou anotace `@Controller`, `@GetRequest` a třída `ModelAndView`.
