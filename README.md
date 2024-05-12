@@ -20,7 +20,7 @@ Databáze obsahuje jednu tabulku pojmenovanou `post`. Jak se tabulka vytváří 
 Tabulka s daty je po prvním spuštění aplikace prázdná, pro otestování bude potřeba si nějaké zápisky do tabulky vložit pomocí nástrojů v IntelliJ Idea.
 Připojovací URL, které se zadává při konfiguraci panelu Database v IntelliJ Idea, najdeš v souboru `src/main/resources/application.yaml`.
 
-1. Udělej fork zdrojového repository do svého účtu na GitHubu.
+1. Použij toto repository jako šablonu (Use this template), ze které si vytvoříš repository ve svém účtu na GitHubu.
 1. Naklonuj si repository **ze svého účtu** na GitHubu na lokální počítač.
 1. Spusť si naklonovanou aplikaci, aby se vytvotřila databáze. V prohlížeči se na stránce [http://localhost:8080/](http://localhost:8080/) zatím bude zobrazovat
    jen chyba, v aplikaci není žádný controller.
@@ -55,8 +55,8 @@ Připojovací URL, které se zadává při konfiguraci panelu Database v Intelli
 
 ## Odkazy
 
-* odkaz na stránku [Lekce 10](https://java.czechitas.cz/2023-podzim/java-2-online/lekce-10.html)
-* Java SE 17 [Javadoc](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/) – dokumentace všech tříd, které jsou součástí základní Javy ve verzi 17.
+* odkaz na stránku [Lekce 10](https://java.czechitas.cz/2024-jaro/java-2-online/lekce-10.html)
+* Java SE 21 [Javadoc](https://docs.oracle.com/en/java/javase/21/docs/api/java.base/) – dokumentace všech tříd, které jsou součástí základní Javy ve verzi 21.
 * Dokumentace [Spring Boot](https://spring.io/projects/spring-boot#learn) – odsud je anotace `@SpringBootApplication` a třída `SpringApplication`.
 * Dokumentace [Spring Framework](https://spring.io/projects/spring-framework#learn) – odsud jsou anotace `@Controller`, `@GetRequest` a třída `ModelAndView`.
 * Dokumentace [Freemarker](https://freemarker.apache.org/docs/) – šablonovací systém pro HTML použitý v projektu.
